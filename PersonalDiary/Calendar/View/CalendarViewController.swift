@@ -6,24 +6,24 @@
 //
 
 import UIKit
+import FSCalendar
 
 class CalendarViewController: UIViewController {
+    @IBOutlet weak var calendarView: FSCalendar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        calendarView.appearance.imageOffset.y = -20
+        calendarView.rowHeight = 100
+        calendarView.appearance.titleOffset = .init(x: 0, y: 20)
+        calendarView.headerHeight = 30
+        calendarView.delegate = self
+        calendarView.dataSource = self
     }
+}
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension CalendarViewController: FSCalendarDelegate, FSCalendarDataSource {
+    func calendar(_ calendar: FSCalendar, imageFor date: Date) -> UIImage? {
+        return .emoji
     }
-    */
-
 }
