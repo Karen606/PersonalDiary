@@ -7,10 +7,15 @@
 
 import UIKit
 
+protocol CustomTabBarDelegate: AnyObject {
+    func addRecord()
+}
+
 class CustomTabBar: UITabBar {
     let centerButton = UIButton()
     private var shapeLayer: CALayer?
-
+    weak var baseDelegate: CustomTabBarDelegate?
+    
     override func draw(_ rect: CGRect) {
         let buttonSize: CGFloat = 100
         let buttonRadius = buttonSize / 2
@@ -27,7 +32,7 @@ class CustomTabBar: UITabBar {
     }
     
     @objc private func centerButtonTapped() {
-        print("Center button tapped")
+        baseDelegate?.addRecord()
     }
     
     override func sizeThatFits(_ size: CGSize) -> CGSize {

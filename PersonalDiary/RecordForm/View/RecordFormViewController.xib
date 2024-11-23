@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecordFormViewController" customModule="PersonalDiary" customModuleProvider="target">
+            <connections>
+                <outlet property="createButton" destination="efj-ik-TVp" id="Hyj-Zg-bOj"/>
+                <outlet property="dateButton" destination="oXx-RD-K5Q" id="d8z-Xh-aJE"/>
+                <outlet property="descriptionTextView" destination="gs7-N6-8bF" id="Jzf-Ah-NiZ"/>
+                <outlet property="photoButton" destination="yDX-cK-bXl" id="esQ-HF-vvz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="titleLabels" destination="Muw-wP-e8N" collectionClass="NSMutableArray" id="gel-fi-ftd"/>
+                <outletCollection property="titleLabels" destination="abK-hG-3uh" collectionClass="NSMutableArray" id="wtR-fg-La3"/>
+                <outletCollection property="titleLabels" destination="oeh-65-fWn" collectionClass="NSMutableArray" id="4XS-vC-zdX"/>
+                <outletCollection property="emojiButtons" destination="fFw-zy-vEN" collectionClass="NSMutableArray" id="Jc1-0z-Ki1"/>
+                <outletCollection property="emojiButtons" destination="dBa-WG-Ngs" collectionClass="NSMutableArray" id="YNK-2b-clq"/>
+                <outletCollection property="emojiButtons" destination="Zg1-lM-grR" collectionClass="NSMutableArray" id="wg1-VN-0bg"/>
+                <outletCollection property="emojiButtons" destination="Bnf-oD-rGA" collectionClass="NSMutableArray" id="f9v-kG-d5j"/>
+                <outletCollection property="emojiButtons" destination="epB-eA-duz" collectionClass="NSMutableArray" id="BoE-Cs-lPE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYH-f8-v1o">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJt-Qu-amE">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="805"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O30-Vs-mdl">
+                                    <rect key="frame" x="15" y="42" width="363" height="152"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How was your day?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Muw-wP-e8N">
+                                            <rect key="frame" x="106.33333333333333" y="18" width="150.33333333333337" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ea3-dz-5ZO">
+                                            <rect key="frame" x="18" y="59" width="327" height="69"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFw-zy-vEN">
+                                                    <rect key="frame" x="0.0" y="0.0" width="64.666666666666671" height="69"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="disabledEmoji1"/>
+                                                    <state key="selected" image="emoji1"/>
+                                                    <connections>
+                                                        <action selector="chooseEmoji:" destination="-1" eventType="touchUpInside" id="TGF-fR-rWF"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBa-WG-Ngs">
+                                                    <rect key="frame" x="65.666666666666657" y="0.0" width="64.666666666666657" height="69"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="disabledEmoji2"/>
+                                                    <state key="selected" image="emoji2"/>
+                                                    <connections>
+                                                        <action selector="chooseEmoji:" destination="-1" eventType="touchUpInside" id="LCc-Fv-5wx"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zg1-lM-grR">
+                                                    <rect key="frame" x="131.33333333333334" y="0.0" width="64.333333333333343" height="69"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="disabledEmoji3"/>
+                                                    <state key="selected" image="emoji3"/>
+                                                    <connections>
+                                                        <action selector="chooseEmoji:" destination="-1" eventType="touchUpInside" id="16O-Jn-Pqt"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnf-oD-rGA">
+                                                    <rect key="frame" x="196.66666666666666" y="0.0" width="64.666666666666657" height="69"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="disabledEmoji4"/>
+                                                    <state key="selected" image="emoji4"/>
+                                                    <connections>
+                                                        <action selector="chooseEmoji:" destination="-1" eventType="touchUpInside" id="RAm-42-pob"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epB-eA-duz">
+                                                    <rect key="frame" x="262.33333333333331" y="0.0" width="64.666666666666686" height="69"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="disabledEmoji5"/>
+                                                    <state key="selected" image="emoji5"/>
+                                                    <connections>
+                                                        <action selector="chooseEmoji:" destination="-1" eventType="touchUpInside" id="Q1k-2r-hDU"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="baseWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="Muw-wP-e8N" firstAttribute="top" secondItem="O30-Vs-mdl" secondAttribute="top" constant="18" id="8b7-jL-Eie"/>
+                                        <constraint firstAttribute="bottom" secondItem="Ea3-dz-5ZO" secondAttribute="bottom" constant="24" id="G0x-DG-PNr"/>
+                                        <constraint firstItem="Ea3-dz-5ZO" firstAttribute="leading" secondItem="O30-Vs-mdl" secondAttribute="leading" constant="18" id="GbQ-pa-YcM"/>
+                                        <constraint firstItem="Ea3-dz-5ZO" firstAttribute="top" secondItem="Muw-wP-e8N" secondAttribute="bottom" constant="21" id="YQ1-RG-g10"/>
+                                        <constraint firstItem="Muw-wP-e8N" firstAttribute="centerX" secondItem="O30-Vs-mdl" secondAttribute="centerX" id="hpR-Qa-R5F"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ea3-dz-5ZO" secondAttribute="trailing" constant="18" id="qOU-Nc-5kc"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oXx-RD-K5Q">
+                                    <rect key="frame" x="77.666666666666686" y="0.0" width="238" height="22"/>
+                                    <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Today, November 22, 15:00" image="calendar">
+                                        <color key="titleColor" name="basePurple"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="chooseDate:" destination="-1" eventType="touchUpInside" id="616-ea-57Q"/>
+                                    </connections>
+                                </button>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LrJ-vQ-3vq">
+                                    <rect key="frame" x="15" y="214" width="363" height="230"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abK-hG-3uh">
+                                            <rect key="frame" x="133" y="16" width="97" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gs7-N6-8bF" customClass="BaseTextView" customModule="PersonalDiary" customModuleProvider="target">
+                                            <rect key="frame" x="28" y="55" width="307" height="154"/>
+                                            <color key="backgroundColor" name="background"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="154" id="8ce-sf-FTy"/>
+                                            </constraints>
+                                            <color key="textColor" name="baseBlack"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="baseWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="gs7-N6-8bF" firstAttribute="leading" secondItem="LrJ-vQ-3vq" secondAttribute="leading" constant="28" id="9HH-v3-oyl"/>
+                                        <constraint firstAttribute="trailing" secondItem="gs7-N6-8bF" secondAttribute="trailing" constant="28" id="RJU-Ph-rJ1"/>
+                                        <constraint firstAttribute="bottom" secondItem="gs7-N6-8bF" secondAttribute="bottom" constant="21" id="axy-73-YTw"/>
+                                        <constraint firstItem="abK-hG-3uh" firstAttribute="top" secondItem="LrJ-vQ-3vq" secondAttribute="top" constant="16" id="soO-Yh-Lcz"/>
+                                        <constraint firstItem="gs7-N6-8bF" firstAttribute="top" secondItem="abK-hG-3uh" secondAttribute="bottom" constant="19" id="w6c-se-GUa"/>
+                                        <constraint firstItem="abK-hG-3uh" firstAttribute="centerX" secondItem="LrJ-vQ-3vq" secondAttribute="centerX" id="yPa-eI-B6U"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2i-67-qOx">
+                                    <rect key="frame" x="15" y="464" width="363" height="229"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oeh-65-fWn">
+                                            <rect key="frame" x="133" y="16" width="97" height="20"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDX-cK-bXl">
+                                            <rect key="frame" x="28" y="51" width="306" height="154"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="154" id="rMA-gh-Vy1"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                    <integer key="value" value="10"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="choosePhoto:" destination="-1" eventType="touchUpInside" id="TYL-k1-mNT"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" name="baseWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="oeh-65-fWn" firstAttribute="centerX" secondItem="r2i-67-qOx" secondAttribute="centerX" id="4NZ-js-TLF"/>
+                                        <constraint firstAttribute="trailing" secondItem="yDX-cK-bXl" secondAttribute="trailing" constant="29" id="Ddx-un-w66"/>
+                                        <constraint firstItem="oeh-65-fWn" firstAttribute="top" secondItem="r2i-67-qOx" secondAttribute="top" constant="16" id="cYO-We-WoV"/>
+                                        <constraint firstItem="yDX-cK-bXl" firstAttribute="leading" secondItem="r2i-67-qOx" secondAttribute="leading" constant="28" id="p2d-K0-tPq"/>
+                                        <constraint firstAttribute="bottom" secondItem="yDX-cK-bXl" secondAttribute="bottom" constant="24" id="r3F-XN-33M"/>
+                                        <constraint firstItem="yDX-cK-bXl" firstAttribute="top" secondItem="oeh-65-fWn" secondAttribute="bottom" constant="15" id="wub-cI-dJM"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efj-ik-TVp" customClass="BaseButton" customModule="PersonalDiary" customModuleProvider="target">
+                                    <rect key="frame" x="22" y="733" width="349" height="48"/>
+                                    <color key="backgroundColor" name="basePurple"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="bKl-gf-u43"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Create an entry">
+                                        <color key="titleColor" name="baseWhite"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="clickedCreate:" destination="-1" eventType="touchUpInside" id="fay-LH-o6j"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="background"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="r2i-67-qOx" secondAttribute="trailing" constant="15" id="0cz-um-eSC"/>
+                                <constraint firstItem="O30-Vs-mdl" firstAttribute="leading" secondItem="cJt-Qu-amE" secondAttribute="leading" constant="15" id="FOe-HR-VsW"/>
+                                <constraint firstAttribute="trailing" secondItem="O30-Vs-mdl" secondAttribute="trailing" constant="15" id="H0n-rh-AgG"/>
+                                <constraint firstItem="oXx-RD-K5Q" firstAttribute="centerX" secondItem="cJt-Qu-amE" secondAttribute="centerX" id="II2-mg-jOx"/>
+                                <constraint firstItem="oXx-RD-K5Q" firstAttribute="top" secondItem="cJt-Qu-amE" secondAttribute="top" id="K4G-Ag-iyR"/>
+                                <constraint firstAttribute="trailing" secondItem="LrJ-vQ-3vq" secondAttribute="trailing" constant="15" id="VyB-7u-MGD"/>
+                                <constraint firstItem="efj-ik-TVp" firstAttribute="leading" secondItem="cJt-Qu-amE" secondAttribute="leading" constant="22" id="X4L-xe-DH5"/>
+                                <constraint firstAttribute="trailing" secondItem="efj-ik-TVp" secondAttribute="trailing" constant="22" id="YYd-lb-2I1"/>
+                                <constraint firstItem="LrJ-vQ-3vq" firstAttribute="top" secondItem="O30-Vs-mdl" secondAttribute="bottom" constant="20" id="aWd-tm-R72"/>
+                                <constraint firstItem="r2i-67-qOx" firstAttribute="leading" secondItem="cJt-Qu-amE" secondAttribute="leading" constant="15" id="bQP-ae-ty1"/>
+                                <constraint firstAttribute="bottom" secondItem="efj-ik-TVp" secondAttribute="bottom" constant="24" id="jCx-O7-cUs"/>
+                                <constraint firstItem="efj-ik-TVp" firstAttribute="top" secondItem="r2i-67-qOx" secondAttribute="bottom" constant="40" id="lUt-ee-uSf"/>
+                                <constraint firstItem="O30-Vs-mdl" firstAttribute="top" secondItem="oXx-RD-K5Q" secondAttribute="bottom" constant="20" id="obf-JB-1SD"/>
+                                <constraint firstItem="r2i-67-qOx" firstAttribute="top" secondItem="LrJ-vQ-3vq" secondAttribute="bottom" constant="20" id="thG-AL-3Bm"/>
+                                <constraint firstItem="LrJ-vQ-3vq" firstAttribute="leading" secondItem="cJt-Qu-amE" secondAttribute="leading" constant="15" id="vMz-hu-tHD"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="cJt-Qu-amE" secondAttribute="bottom" id="5ow-ne-SXM"/>
+                        <constraint firstAttribute="trailing" secondItem="cJt-Qu-amE" secondAttribute="trailing" id="FAp-em-BFp"/>
+                        <constraint firstItem="cJt-Qu-amE" firstAttribute="top" secondItem="aYH-f8-v1o" secondAttribute="top" id="HAq-ll-a3N"/>
+                        <constraint firstItem="cJt-Qu-amE" firstAttribute="leading" secondItem="aYH-f8-v1o" secondAttribute="leading" id="v0q-Uz-das"/>
+                        <constraint firstItem="cJt-Qu-amE" firstAttribute="centerX" secondItem="aYH-f8-v1o" secondAttribute="centerX" id="wcU-0A-lVF"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="background"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="aYH-f8-v1o" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Lks-tw-6tG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aYH-f8-v1o" secondAttribute="bottom" id="V3T-vA-az2"/>
+                <constraint firstItem="aYH-f8-v1o" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="YHX-Gd-i5i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aYH-f8-v1o" secondAttribute="trailing" id="anM-lI-9pc"/>
+                <constraint firstItem="aYH-f8-v1o" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="j9T-RL-pbM"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="QFS-zj-gv8" appends="YES" id="dpU-FM-qnh"/>
+            </connections>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+        <tapGestureRecognizer id="QFS-zj-gv8">
+            <connections>
+                <action selector="handleTapGesture:" destination="-1" id="fNf-FO-2xI"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="calendar" width="18" height="20"/>
+        <image name="disabledEmoji1" width="69" height="69"/>
+        <image name="disabledEmoji2" width="69" height="69"/>
+        <image name="disabledEmoji3" width="69" height="69"/>
+        <image name="disabledEmoji4" width="69" height="69"/>
+        <image name="disabledEmoji5" width="69" height="69"/>
+        <image name="emoji1" width="69.333335876464844" height="69"/>
+        <image name="emoji2" width="69.333335876464844" height="69"/>
+        <image name="emoji3" width="69.333335876464844" height="69"/>
+        <image name="emoji4" width="69.333335876464844" height="69"/>
+        <image name="emoji5" width="69.333335876464844" height="69"/>
+        <namedColor name="background">
+            <color red="0.92199999094009399" green="0.9100000262260437" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="baseBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="basePurple">
+            <color red="0.45100000500679016" green="0.35699999332427979" blue="0.94900000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="baseWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

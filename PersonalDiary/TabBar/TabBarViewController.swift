@@ -12,6 +12,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let customTabBar = CustomTabBar()
+        customTabBar.baseDelegate = self
         setValue(customTabBar, forKey: "tabBar")
         let bgView = UIImageView(image: .tabBar)
         bgView.frame = self.tabBar.bounds
@@ -22,5 +23,11 @@ class TabBarViewController: UITabBarController {
         let settingsVC = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
         settingsVC.tabBarItem = UITabBarItem(title: "", image: .settings, tag: 1)
         viewControllers = [calendarVC, UIViewController(), settingsVC]
+    }
+}
+
+extension TabBarViewController: CustomTabBarDelegate {
+    func addRecord() {
+        self.selectedViewController?.pushViewController(RecordFormViewController.self)
     }
 }

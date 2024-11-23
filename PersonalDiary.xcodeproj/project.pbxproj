@@ -20,6 +20,26 @@
 		6B1B1A752CF0EE6200E7328A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A722CF0EE6200E7328A /* CalendarViewController.swift */; };
 		6B1B1A7A2CF0EE7F00E7328A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A782CF0EE7F00E7328A /* SettingsViewController.swift */; };
 		6B1B1A7B2CF0EE7F00E7328A /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B1A792CF0EE7F00E7328A /* SettingsViewController.xib */; };
+		6B1B1A832CF2789700E7328A /* RecordFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A812CF2789700E7328A /* RecordFormViewController.swift */; };
+		6B1B1A842CF2789700E7328A /* RecordFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B1A822CF2789700E7328A /* RecordFormViewController.xib */; };
+		6B1B1A962CF27A1F00E7328A /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B1A8B2CF27A1F00E7328A /* SFProText-Medium.ttf */; };
+		6B1B1A972CF27A1F00E7328A /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B1A8C2CF27A1F00E7328A /* SFProText-Regular.ttf */; };
+		6B1B1A982CF27A1F00E7328A /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B1B1A8D2CF27A1F00E7328A /* SFProText-Semibold.ttf */; };
+		6B1B1A9A2CF27A1F00E7328A /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A892CF27A1F00E7328A /* Font.swift */; };
+		6B1B1A9B2CF27A1F00E7328A /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A8F2CF27A1F00E7328A /* PaddingTextField.swift */; };
+		6B1B1A9D2CF27A1F00E7328A /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A932CF27A1F00E7328A /* UITextField.swift */; };
+		6B1B1A9E2CF27A1F00E7328A /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A912CF27A1F00E7328A /* ShadowView.swift */; };
+		6B1B1A9F2CF27A1F00E7328A /* PaddingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A902CF27A1F00E7328A /* PaddingTextView.swift */; };
+		6B1B1AA02CF27A1F00E7328A /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A862CF27A1F00E7328A /* BaseButton.swift */; };
+		6B1B1AA12CF27A1F00E7328A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A942CF27A1F00E7328A /* UIView.swift */; };
+		6B1B1AA22CF27A1F00E7328A /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A922CF27A1F00E7328A /* String.swift */; };
+		6B1B1AA42CF27A1F00E7328A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1B1A952CF27A1F00E7328A /* ViewController.swift */; };
+		6BC785502CF28131004C0B46 /* BaseTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7854F2CF28131004C0B46 /* BaseTextView.swift */; };
+		6BC785532CF28306004C0B46 /* RecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC785522CF28306004C0B46 /* RecordModel.swift */; };
+		6BC785562CF283D2004C0B46 /* RecordFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC785552CF283D2004C0B46 /* RecordFormViewModel.swift */; };
+		6BC785592CF2843D004C0B46 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC785582CF2843D004C0B46 /* CoreDataManager.swift */; };
+		6BC7855C2CF28A8C004C0B46 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7855B2CF28A8C004C0B46 /* CalendarViewModel.swift */; };
+		6BC7855E2CF28B9B004C0B46 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC7855D2CF28B9B004C0B46 /* Date.swift */; };
 		86824059CC8B08B4377007BB /* Pods_PersonalDiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3737AF9D04BAFF3C6E993EF4 /* Pods_PersonalDiary.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +62,26 @@
 		6B1B1A732CF0EE6200E7328A /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
 		6B1B1A782CF0EE7F00E7328A /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6B1B1A792CF0EE7F00E7328A /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		6B1B1A812CF2789700E7328A /* RecordFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFormViewController.swift; sourceTree = "<group>"; };
+		6B1B1A822CF2789700E7328A /* RecordFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordFormViewController.xib; sourceTree = "<group>"; };
+		6B1B1A862CF27A1F00E7328A /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		6B1B1A892CF27A1F00E7328A /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		6B1B1A8B2CF27A1F00E7328A /* SFProText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Medium.ttf"; sourceTree = "<group>"; };
+		6B1B1A8C2CF27A1F00E7328A /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		6B1B1A8D2CF27A1F00E7328A /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		6B1B1A8F2CF27A1F00E7328A /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
+		6B1B1A902CF27A1F00E7328A /* PaddingTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextView.swift; sourceTree = "<group>"; };
+		6B1B1A912CF27A1F00E7328A /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		6B1B1A922CF27A1F00E7328A /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		6B1B1A932CF27A1F00E7328A /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		6B1B1A942CF27A1F00E7328A /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		6B1B1A952CF27A1F00E7328A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6BC7854F2CF28131004C0B46 /* BaseTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextView.swift; sourceTree = "<group>"; };
+		6BC785522CF28306004C0B46 /* RecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordModel.swift; sourceTree = "<group>"; };
+		6BC785552CF283D2004C0B46 /* RecordFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordFormViewModel.swift; sourceTree = "<group>"; };
+		6BC785582CF2843D004C0B46 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		6BC7855B2CF28A8C004C0B46 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		6BC7855D2CF28B9B004C0B46 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +125,9 @@
 		6B1B1A602CF0ECAF00E7328A /* PersonalDiary */ = {
 			isa = PBXGroup;
 			children = (
+				6BC785572CF2842D004C0B46 /* CoreData */,
+				6B1B1A852CF279D000E7328A /* Extensions */,
+				6B1B1A7F2CF2788100E7328A /* RecordForm */,
 				6B1B1A762CF0EE6700E7328A /* Settings */,
 				6B1B1A702CF0EE4700E7328A /* Calendar */,
 				6B1B1A6B2CF0ED5200E7328A /* TabBar */,
@@ -120,6 +163,7 @@
 		6B1B1A702CF0EE4700E7328A /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				6BC7855A2CF28A80004C0B46 /* ViewModel */,
 				6B1B1A712CF0EE5100E7328A /* View */,
 			);
 			path = Calendar;
@@ -149,6 +193,86 @@
 				6B1B1A792CF0EE7F00E7328A /* SettingsViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6B1B1A7F2CF2788100E7328A /* RecordForm */ = {
+			isa = PBXGroup;
+			children = (
+				6BC785542CF28394004C0B46 /* ViewModel */,
+				6BC785512CF282F9004C0B46 /* Model */,
+				6B1B1A802CF2788500E7328A /* View */,
+			);
+			path = RecordForm;
+			sourceTree = "<group>";
+		};
+		6B1B1A802CF2788500E7328A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B1A812CF2789700E7328A /* RecordFormViewController.swift */,
+				6B1B1A822CF2789700E7328A /* RecordFormViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B1B1A852CF279D000E7328A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B1A8E2CF27A1F00E7328A /* Font */,
+				6B1B1A862CF27A1F00E7328A /* BaseButton.swift */,
+				6BC7854F2CF28131004C0B46 /* BaseTextView.swift */,
+				6B1B1A8F2CF27A1F00E7328A /* PaddingTextField.swift */,
+				6B1B1A902CF27A1F00E7328A /* PaddingTextView.swift */,
+				6B1B1A912CF27A1F00E7328A /* ShadowView.swift */,
+				6B1B1A922CF27A1F00E7328A /* String.swift */,
+				6BC7855D2CF28B9B004C0B46 /* Date.swift */,
+				6B1B1A932CF27A1F00E7328A /* UITextField.swift */,
+				6B1B1A942CF27A1F00E7328A /* UIView.swift */,
+				6B1B1A952CF27A1F00E7328A /* ViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6B1B1A8E2CF27A1F00E7328A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				6B1B1A892CF27A1F00E7328A /* Font.swift */,
+				6B1B1A8B2CF27A1F00E7328A /* SFProText-Medium.ttf */,
+				6B1B1A8C2CF27A1F00E7328A /* SFProText-Regular.ttf */,
+				6B1B1A8D2CF27A1F00E7328A /* SFProText-Semibold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		6BC785512CF282F9004C0B46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6BC785522CF28306004C0B46 /* RecordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BC785542CF28394004C0B46 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BC785552CF283D2004C0B46 /* RecordFormViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BC785572CF2842D004C0B46 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6BC785582CF2843D004C0B46 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		6BC7855A2CF28A80004C0B46 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BC7855B2CF28A8C004C0B46 /* CalendarViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A340EF24953C01CA5DD3551B /* Pods */ = {
@@ -224,7 +348,11 @@
 				6B1B1A742CF0EE6200E7328A /* CalendarViewController.xib in Resources */,
 				6B1B1A622CF0ECAF00E7328A /* Assets.xcassets in Resources */,
 				6B1B1A642CF0ECAF00E7328A /* LaunchScreen.storyboard in Resources */,
+				6B1B1A842CF2789700E7328A /* RecordFormViewController.xib in Resources */,
 				6B1B1A652CF0ECAF00E7328A /* Root.storyboard in Resources */,
+				6B1B1A962CF27A1F00E7328A /* SFProText-Medium.ttf in Resources */,
+				6B1B1A972CF27A1F00E7328A /* SFProText-Regular.ttf in Resources */,
+				6B1B1A982CF27A1F00E7328A /* SFProText-Semibold.ttf in Resources */,
 				6B1B1A7B2CF0EE7F00E7328A /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,11 +408,27 @@
 			files = (
 				6B1B1A662CF0ECAF00E7328A /* AppDelegate.swift in Sources */,
 				6B1B1A672CF0ECAF00E7328A /* PersonalDiary.xcdatamodeld in Sources */,
+				6B1B1A832CF2789700E7328A /* RecordFormViewController.swift in Sources */,
+				6BC785502CF28131004C0B46 /* BaseTextView.swift in Sources */,
 				6B1B1A682CF0ECAF00E7328A /* SceneDelegate.swift in Sources */,
+				6BC7855C2CF28A8C004C0B46 /* CalendarViewModel.swift in Sources */,
 				6B1B1A6D2CF0EDF800E7328A /* TabBarViewController.swift in Sources */,
 				6B1B1A6F2CF0EE0100E7328A /* CustomTabBar.swift in Sources */,
 				6B1B1A752CF0EE6200E7328A /* CalendarViewController.swift in Sources */,
+				6BC785532CF28306004C0B46 /* RecordModel.swift in Sources */,
 				6B1B1A692CF0ECAF00E7328A /* RootViewController.swift in Sources */,
+				6BC785592CF2843D004C0B46 /* CoreDataManager.swift in Sources */,
+				6B1B1A9A2CF27A1F00E7328A /* Font.swift in Sources */,
+				6B1B1A9B2CF27A1F00E7328A /* PaddingTextField.swift in Sources */,
+				6B1B1A9D2CF27A1F00E7328A /* UITextField.swift in Sources */,
+				6B1B1A9E2CF27A1F00E7328A /* ShadowView.swift in Sources */,
+				6B1B1A9F2CF27A1F00E7328A /* PaddingTextView.swift in Sources */,
+				6B1B1AA02CF27A1F00E7328A /* BaseButton.swift in Sources */,
+				6BC785562CF283D2004C0B46 /* RecordFormViewModel.swift in Sources */,
+				6BC7855E2CF28B9B004C0B46 /* Date.swift in Sources */,
+				6B1B1AA12CF27A1F00E7328A /* UIView.swift in Sources */,
+				6B1B1AA22CF27A1F00E7328A /* String.swift in Sources */,
+				6B1B1AA42CF27A1F00E7328A /* ViewController.swift in Sources */,
 				6B1B1A7A2CF0EE7F00E7328A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
