@@ -17,10 +17,10 @@ class CustomTabBar: UITabBar {
     weak var baseDelegate: CustomTabBarDelegate?
     
     override func draw(_ rect: CGRect) {
-        let buttonSize: CGFloat = 100
+        let buttonSize: CGFloat = rect.width / 3
         let buttonRadius = buttonSize / 2
-        centerButton.frame = CGRect(x: (bounds.width / 2) - buttonRadius,
-                                    y: -20,
+        centerButton.frame = CGRect(x: (bounds.width / 3),
+                                    y: -25,
                                     width: buttonSize,
                                     height: buttonSize)
         centerButton.layer.cornerRadius = buttonRadius

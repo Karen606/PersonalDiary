@@ -173,6 +173,7 @@
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDX-cK-bXl">
                                             <rect key="frame" x="28" y="51" width="306" height="154"/>
+                                            <color key="backgroundColor" name="background"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="154" id="rMA-gh-Vy1"/>
                                             </constraints>

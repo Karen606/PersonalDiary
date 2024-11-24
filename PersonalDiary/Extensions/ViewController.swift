@@ -9,6 +9,16 @@ import UIKit
 
 extension UIViewController {
     
+    func setNavigationTitle(title: String) {
+        let titleLabel = UILabel()
+        titleLabel.text = title
+        titleLabel.textColor = .baseBlack
+        titleLabel.font = .semibold(size: 22)
+        titleLabel.textAlignment = .center
+        titleLabel.sizeToFit()
+        self.navigationItem.titleView = titleLabel
+    }
+    
     func setNaviagtionBackButton() {
         let backButton = UIButton(type: .custom)
         backButton.setTitle("Cancel", for: .normal)

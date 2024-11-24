@@ -18,6 +18,7 @@ class TabBarViewController: UITabBarController {
         bgView.frame = self.tabBar.bounds
         self.tabBar.addSubview(bgView)
         self.tabBar.sendSubviewToBack(bgView)
+        self.tabBar.tintColor = .basePurple
         let calendarVC = CalendarViewController(nibName: "CalendarViewController", bundle: nil)
         calendarVC.tabBarItem = UITabBarItem(title: "", image: .calendar, tag: 0)
         let settingsVC = SettingsViewController(nibName: "SettingsViewController", bundle: nil)

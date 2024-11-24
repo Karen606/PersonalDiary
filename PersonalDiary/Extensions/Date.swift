@@ -20,14 +20,20 @@ extension Date {
     }
     
     func settingCurrentTime() -> Date? {
-            let calendar = Calendar.current
-            // Extract the current time components
-            let currentTimeComponents = calendar.dateComponents([.hour, .minute, .second], from: Date())
-            
-            // Create a new date with the same date components but updated with the current time
-            return calendar.date(bySettingHour: currentTimeComponents.hour!,
-                                 minute: currentTimeComponents.minute!,
-                                 second: currentTimeComponents.second!,
-                                 of: self)
-        }
+        let calendar = Calendar.current
+        let currentTimeComponents = calendar.dateComponents([.hour, .minute, .second], from: Date())
+        return calendar.date(bySettingHour: currentTimeComponents.hour!,
+                             minute: currentTimeComponents.minute!,
+                             second: currentTimeComponents.second!,
+                             of: self)
+    }
+    
+    func getTodayAt(hour: Int, minute: Int = 0, second: Int = 0) -> Date? {
+        let calendar = Calendar.current
+        var components = calendar.dateComponents([.year, .month, .day], from: self)
+        components.hour = hour
+        components.minute = minute
+        components.second = second
+        return calendar.date(from: components)
+    }
 }
