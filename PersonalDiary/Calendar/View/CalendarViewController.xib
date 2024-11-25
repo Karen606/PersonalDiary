@@ -35,7 +35,7 @@
                             <integer key="value" value="0"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="titleTodayColor">
-                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="value" name="baseBlack"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="allowsSelection" value="YES"/>
                         <userDefinedRuntimeAttribute type="color" keyPath="todaySelectionColor">
